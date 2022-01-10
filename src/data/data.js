@@ -1,4 +1,4 @@
-{
+const data = {
   "destinations": [
     {
       "name": "Moon",
@@ -106,3 +106,4 @@
     }
   ]
 }
+export default data

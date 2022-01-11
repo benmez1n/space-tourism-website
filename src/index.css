@@ -5,7 +5,19 @@
   @apply p-0 m-0 box-border
 }
 body{
-  @apply bg-mobile-bg sm:bg-home-bg text-white
+  @apply text-white
+}
+body.home{
+  @apply bg-mobile-bg sm:bg-home-bg 
+}
+body.destination{
+  @apply bg-destination-mobile sm:bg-destination-desktop bg-cover 
+}
+body.technology{
+  @apply bg-technology-mobile sm:bg-technology-desktop bg-cover
+}
+body.crew{
+  @apply bg-crew-mobile sm:bg-crew-desktop  bg-cover
 }
 ul{
   padding-inline-start: 0;

@@ -1,4 +1,5 @@
 const Home = () => {
+    document.body.className = "home"
     return ( 
         <div className="container grid sm:grid-cols-2 mx-auto sm:mt-36 ">
             <div className="text-center mx-4 my-6 text-gray-400 sm:text-left sm:w-1/2 sm:mx-auto">

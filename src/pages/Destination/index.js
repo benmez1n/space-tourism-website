@@ -4,7 +4,7 @@ const Destinations = () => {
     document.body.className = "destination"
 
     const destinations = data.destinations
-    const [destinationLink , setDestinationLink] = useState()
+    const [destinationLink , setDestinationLink] = useState("Moon")
     const [ destination,setDestination ] = useState(data.destinations[0]) 
     useEffect(
         ()=>{
@@ -25,16 +25,18 @@ const Destinations = () => {
     return ( 
         <div className="container text-center sm:text-left">
             <div className="w-5/6 mx-auto sm:grid sm:grid-cols-2 sm:gap-10">
-                <div className="mt-10">
-                    <h1 className="font-bold pt-8 text-xl tracking-widest text-gray-300"><span className="text-gray-500">01</span> PICK YOUR DESTINATION</h1>
+                <div className="sm:mt-10">
+                    <h1 className="font-bold pt-8 text-sm  tracking-widest text-gray-300 sm:text-xl">
+                        <span className="text-gray-500">01</span> PICK YOUR DESTINATION
+                    </h1>
                     <img className = "w-3/4 mx-auto my-10 " 
                         src={destinationLink ? 
                                     `../assets/destination/image-${destinationLink.toLocaleLowerCase()}.png`
                                     : `../assets/destination/image-moon.png`
                                     } alt="" />
                 </div>
-                <div className="mt-36">
-                    <ul className="text-slate-200 flex justify-between w-3/4 mx-auto tracking-widest sm:mx-0">
+                <div className="sm:mt-36">
+                    <ul className="text-slate-200 flex justify-between w-11/12 mx-auto tracking-widest sm:mx-0">
                         {
                             destinations.map(destination => {
                                 return (
@@ -55,7 +57,7 @@ const Destinations = () => {
                                 <span className="font-light text-2xl sm:text-3xl">{destination.distance}</span>
                             </div>
                             <div className="grid uppercase"> 
-                                <span className="text-gray-400">EST. TRAVEL TIME</span>
+                                <span className="text-gray-200">EST. TRAVEL TIME</span>
                                 <span className="font-light text-2xl sm:text-3xl">{destination.travel}</span>
                             </div>
                         </div>

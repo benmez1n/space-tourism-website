@@ -12,7 +12,7 @@ const Navbar = () => {
             <img className="h-8 pr-2 sm:hidden" src="../assets/shared/icon-hamburger.svg" 
                 alt="menu-btn" onClick={()=>handleMenu()}/>
             <ul ref={menu} className="hidden absolute uppercase top-16 bg-slate-800 bg-opacity-90 w-full tracking-widest font-extralight
-                    sm:flex sm:justify-between sm:static sm:w-2/3 sm:px-6 sm:text-lg sm:py-4">
+                    sm:flex sm:justify-between sm:static sm:w-auto sm:px-6 sm:text-lg sm:py-4">
                 <li className="pl-4 py-3 border-b border-gray-400 sm:border-none cursor-pointer">
                     <NavLink to="/" onClick={()=>handleMenu()}>
                         <span className="font-bold">00</span> Home
@@ -20,10 +20,10 @@ const Navbar = () => {
                 </li>
                 {Object.keys(data).map((item,index)=> {
                         return(
-                                <li className="pl-4 py-3 border-b border-gray-400 sm:border-none cursor-pointer" 
+                                <li className="pl-4 py-3 border-b border-gray-400 sm:border-none cursor-pointer sm:ml-10" 
                                         key={index} >
                                     <NavLink to={`${item}`} onClick={()=>handleMenu()}>
-                                        <span className=" font-bold">0{`${index}`}</span> {`${item}`}
+                                        <span className=" font-bold">0{`${index+1}`}</span> {`${item}`}
                                     </NavLink>
                                 </li>
                         )

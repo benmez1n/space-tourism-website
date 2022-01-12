@@ -8,7 +8,7 @@ body{
   @apply text-white
 }
 body.home{
-  @apply bg-mobile-bg sm:bg-home-bg 
+  @apply bg-mobile-bg sm:bg-home-bg  bg-cover
 }
 body.destination{
   @apply bg-destination-mobile sm:bg-destination-desktop bg-cover 

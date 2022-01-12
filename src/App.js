@@ -3,6 +3,7 @@ import Navbar from './layouts/Navbar'
 import Home from './pages/Home/index'
 import Destinations from './pages/Destination/index'
 import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
 function App() {
   return (
     <BrowserRouter >
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element = {<Home/>}/>
         <Route path = "destinations" element = {<Destinations />}/>
         <Route path="crew" element={<Crew/>}/>
+        <Route path="technology" element = {<Technology />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
   @apply p-0 m-0 box-border
 }
 body{
-  @apply text-white
+  @apply text-white font-Nunito_Sans
 }
 body.home{
   @apply bg-mobile-bg sm:bg-home-bg  bg-cover

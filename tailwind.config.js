@@ -22,6 +22,9 @@ module.exports = {
         'technology-mobile':"url('./assets/technology/background-technology-mobile.jpg')",
         'destination-desktop':"url('./assets/destination/background-destination-desktop.jpg')",
         'destination-mobile':"url('./assets/destination/background-destination-mobile.jpg')",
+      },
+      fontFamily: {
+        Nunito_Sans:["Nunito Sans"]
       }
     },
   },
